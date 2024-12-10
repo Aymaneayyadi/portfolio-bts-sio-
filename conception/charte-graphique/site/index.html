@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio AYMANE AYYADI</title>
+    <style>
+        /* Styles généraux */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #2c3e50, #34495e);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem 0;
+            background: #34495e;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
 
+        section {
+            padding: 2rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #1abc9c;
+            display: inline-block;
+        }
+
+        /* Section Compétences */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .skill-card {
+            flex: 1 1 calc(33% - 1rem);
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
+        .skill-card h3 {
+            color: #1abc9c;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Section Projets */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .project-card {
+            flex: 1 1 calc(50% - 1rem);
+            background: #34495e;
+            color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-card h3 {
+            padding: 1rem;
+            background: #1abc9c;
+            margin: 0;
+            text-align: center;
+        }
+        .project-card p {
+            padding: 1rem;
+        }
+
+        /* Section Contact */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f4f4f4;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form button {
+            background: #1abc9c;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        form button:hover {
+            background: #16a085;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portfolio-BTS-SIO-SLAM</h1>
+    <p>Développement d'applications et solutions logicielles modernes</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>À propos</h2>
+    <p>Je suis AYMANE AYYADI Étudiant en premier année en BTS SIO option SLAM, je suis intéressé par le développement logicielle. Mon objectif est de concevoir des solutions adaptées aux besoins des entreprises, en utilisant des outils modernes et des méthodologies efficaces.</p>
+</section>
+
+<section id="skills">
+    <h2>Compétences</h2>
+    <div class="skills">
+        <div class="skill-card">
+            <h3>Langages</h3>
+            <p>html,css</p>
+        </div>
+        <div class="skill-card">
+            <h3> Éditeur</h3>
+            <p>Visual Studio Code</p>
+        </div>
+        <div class="skill-card">
+            <h3>Bases de données</h3>
+            <p>MySQL</p>
+        </div>
+    </div>
+</section>
+        <div class="project-card">
+            <img src="https://via.placeholder.com/500x200" alt="Projet 2">
+            <h3>Site e-commerce</h3>
+            <p>Création d'un site web de vente en ligne avec Laravel et React.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <form action="#" method="post">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Portfolio BTS SIO SLAM.</p>
+</footer>
+
+</body>
+</html>
